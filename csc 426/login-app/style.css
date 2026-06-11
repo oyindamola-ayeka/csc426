@@ -5,20 +5,20 @@
 }
 
 :root {
-  --navy: #1a1a2e;
-  --navy-hover: #16213e;
-  --navy-light: rgba(26, 26, 46, 0.06);
+  --navy: #1b4332;
+  --navy-hover: #163527;
+  --navy-light: rgba(27, 67, 50, 0.06);
 
-  --bg: #f4f4f0;
+  --bg: #f0ede8;
   --surface: #ffffff;
-  --surface-2: #f7f7f5;
+  --surface-2: #f8f6f3;
 
   --border: rgba(0, 0, 0, 0.1);
-  --border-focus: #1a1a2e;
+  --border-focus: #1b4332;
 
   --text-1: #111111;
-  --text-2: #555555;
-  --text-3: #aaaaaa;
+  --text-2: #556052;
+  --text-3: #a8b5a4;
 
   --success-bg: #ecfdf5;
   --success-text: #059669;
@@ -115,7 +115,7 @@ body {
 }
 
 .left-sub {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.45);
   font-size: 12px;
   line-height: 1.6;
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .dot.active {
-  background: #ffffff;
+  background: #d8f3dc;
 }
 
 /* ── Right form panel ────────────────────────────────────── */
@@ -230,7 +230,7 @@ label {
 .input-wrap:focus-within {
   border-color: var(--border-focus);
   background: var(--surface);
-  box-shadow: 0 0 0 3px rgba(26, 26, 46, 0.08);
+  box-shadow: 0 0 0 3px rgba(27, 67, 50, 0.08);
 }
 
 .field-icon {
