@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator" role="application" aria-label="Calculator">
+  <div class="display" aria-live="polite">
+    <div class="display-expr" id="expr"></div>
+    <div class="display-val"  id="val">0</div>
+  </div>
+
+  <div class="grid">
+    <button class="btn-clear" onclick="calc.clear()"       aria-label="Clear">C</button>
+    <button class="btn-op"    onclick="calc.toggleSign()"  aria-label="Toggle sign">+/−</button>
+    <button class="btn-op"    onclick="calc.op('%')"       aria-label="Modulus">%</button>
+    <button class="btn-op"    onclick="calc.op('/')"       aria-label="Divide">÷</button>
+
+    <button onclick="calc.digit('7')">7</button>
+    <button onclick="calc.digit('8')">8</button>
+    <button onclick="calc.digit('9')">9</button>
+    <button class="btn-op" onclick="calc.op('*')"  aria-label="Multiply">×</button>
+
+    <button onclick="calc.digit('4')">4</button>
+    <button onclick="calc.digit('5')">5</button>
+    <button onclick="calc.digit('6')">6</button>
+    <button class="btn-op" onclick="calc.op('-')"  aria-label="Subtract">−</button>
+
+    <button onclick="calc.digit('1')">1</button>
+    <button onclick="calc.digit('2')">2</button>
+    <button onclick="calc.digit('3')">3</button>
+    <button class="btn-op" onclick="calc.op('+')"  aria-label="Add">+</button>
+
+    <button class="btn-op" onclick="calc.op('^')"  aria-label="Power">x^y</button>
+    <button class="btn-zero" onclick="calc.digit('0')">0</button>
+    <button onclick="calc.dot()">.</button>
+    <button class="btn-eq" onclick="calc.equals()" aria-label="Equals">=</button>
+  </div>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
