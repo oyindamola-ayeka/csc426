@@ -9,72 +9,85 @@
 <body>
 
   <div class="page">
-
     <div class="card">
 
-      <!-- Brand -->
-      <div class="brand">
+      <!-- Left panel -->
+      <div class="card-left">
         <div class="brand-icon">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
         </div>
-      </div>
-
-      <h1 class="heading">Welcome back</h1>
-      <p class="sub">Sign in to continue to your account</p>
-
-      <!-- Alert banner -->
-      <div id="alert" class="alert" role="alert" aria-live="polite" hidden>
-        <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
-        <span id="alert-text"></span>
-      </div>
-
-      <form id="form" novalidate>
-
-        <!-- Username -->
-        <div class="field" id="field-u">
-          <label for="username">Username</label>
-          <div class="input-wrap">
-            <svg class="field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" maxlength="50" aria-describedby="u-err" />
+        <div class="left-copy">
+          <div class="left-title">Simple. Fast. Secure.</div>
+          <div class="left-sub">Your workspace is one sign-in away.</div>
+          <div class="left-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
-          <span class="field-err" id="u-err" role="alert"></span>
+        </div>
+      </div>
+
+      <!-- Right panel -->
+      <div class="card-right">
+
+        <div class="form-head">
+          <h1 class="heading">Welcome back</h1>
+          <p class="sub">Sign in to continue to your account</p>
         </div>
 
-        <!-- Password -->
-        <div class="field" id="field-p">
-          <label for="password">Password</label>
-          <div class="input-wrap">
-            <svg class="field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" aria-describedby="p-err" />
-            <button type="button" id="toggle-pw" class="pw-toggle" aria-label="Show password">
-              <svg id="eye" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+        <!-- Alert banner -->
+        <div id="alert" class="alert" role="alert" aria-live="polite" hidden>
+          <svg class="alert-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          <span id="alert-text"></span>
+        </div>
+
+        <form id="form" novalidate>
+
+          <!-- Username -->
+          <div class="field" id="field-u">
+            <label for="username">Username</label>
+            <div class="input-wrap">
+              <svg class="field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              <input type="text" id="username" name="username" placeholder="Enter your username" autocomplete="username" maxlength="50" aria-describedby="u-err" />
+            </div>
+            <span class="field-err" id="u-err" role="alert"></span>
+          </div>
+
+          <!-- Password -->
+          <div class="field" id="field-p">
+            <label for="password">Password</label>
+            <div class="input-wrap">
+              <svg class="field-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" aria-describedby="p-err" />
+              <button type="button" id="toggle-pw" class="pw-toggle" aria-label="Show password">
+                <svg id="eye" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+            <span class="field-err" id="p-err" role="alert"></span>
+          </div>
+
+          <!-- Buttons -->
+          <div class="actions">
+            <button type="submit" class="btn-primary" id="btn-submit">
+              <span id="btn-label">Sign in</span>
+              <span id="btn-spinner" class="spinner" hidden aria-hidden="true"></span>
             </button>
+            <button type="reset" class="btn-ghost" id="btn-reset">Reset</button>
           </div>
-          <span class="field-err" id="p-err" role="alert"></span>
+
+        </form>
+
+        <!-- Credentials hint -->
+        <div class="hint">
+          <span class="hint-label">Demo</span>
+          <code>mylogin</code> / <code>login123</code>
         </div>
 
-        <!-- Buttons -->
-        <div class="actions">
-          <button type="submit" class="btn-primary" id="btn-submit">
-            <span id="btn-label">Sign in</span>
-            <span id="btn-spinner" class="spinner" hidden aria-hidden="true"></span>
-          </button>
-          <button type="reset" class="btn-ghost" id="btn-reset">Reset</button>
-        </div>
-
-      </form>
-
-      <!-- Credentials hint -->
-      <div class="hint">
-        <span class="hint-label">Demo credentials</span>
-        <code>mylogin</code> / <code>login123</code>
       </div>
-
     </div>
-
   </div>
 
-  <!-- Success screen (hidden initially) -->
+  <!-- Success screen -->
   <div id="success-screen" class="success-screen" hidden>
     <div class="success-card">
       <div class="success-check">
